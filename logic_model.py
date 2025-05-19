@@ -1,13 +1,12 @@
-import os
 import json
 from typing import Dict, List
 from openai import OpenAI
-from dotenv import load_dotenv
 from search_utils import combine_search_queries
+import streamlit as st
 
 # 環境変数の読み込み
-load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_logic_model(policy_name: str, outcome: str, municipality: str) -> Dict:
     """

@@ -1,5 +1,9 @@
 .PHONY: run lint format check
 
+install:
+	python -m pip install --upgrade pip
+	python -m pip install -r requirements.txt
+
 run:
 	PYTHONPATH=. streamlit run src/app.py
 

@@ -18,7 +18,7 @@ cd logicmodel_localgov
 2. 必要なパッケージのインストール
 
 ```bash
-make install      # アプリケーションの起動
+make install
 ```
 
 3. 環境変数の設定

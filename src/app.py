@@ -1,11 +1,11 @@
 import streamlit as st
-from src.logic_model import (
+from logic_model import (
     generate_logic_model_with_agents,
     generate_edges_from_nodes,
     create_mermaid_from_logic_model,
     display_mermaid_chart,
 )
-from src.search_utils import (
+from search_utils import (
     search_policy_logic_model_related,
     search_municipality_policy,
 )

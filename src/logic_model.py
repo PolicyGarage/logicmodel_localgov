@@ -11,7 +11,7 @@ import textwrap
 
 logic_agent = Agent(
     name="LogicModelBuilder",
-    model="gpt-4.1-2025-04-14", #o4-mini-2025-04-16
+    model="o4-mini-2025-04-16", #gpt-4.1-2025-04-14
     instructions="""
 あなたは自治体の政策分析に特化したアシスタントです。
 以下のJSON形式でロジックモデル要素を生成してください：
@@ -33,7 +33,7 @@ logic_agent = Agent(
 
 edge_generator_agent = Agent(
     name="EdgeGenerator",
-    model="gpt-4.1-2025-04-14", #o4-mini-2025-04-16
+    model="o4-mini-2025-04-16", #gpt-4.1-2025-04-14
     instructions="""
 あなたはロジックモデル設計の専門家です。
 以下のノード群に基づき、各要素間の因果関係を表す "edges"（接続）を構成してください。
